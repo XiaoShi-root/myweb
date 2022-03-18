@@ -1,15 +1,28 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf8"></meta>
-    </head>
-    <body>
-        <iframe src="https://www.baidu.com">
 
-        </iframe>
-        <div style="text-align: center; font-size: large;">
-                    来口鸡汤吧！！
-        </div>
+<head>
+    <meta charset="utf8">
+    </meta>
+</head>
 
-    </body>
+<body>
+    <div onmouseover="onclic()" style="text-align: center;font-size: medium;border-left: 7%;border-right: 7%;box-shadow: darkmagenta;border-radius: 10%;border-color: aqua;">
+        <h1>马建业<span style="font-size:large;">牛逼！！</span></h1>
+        <p>马建业是中国安徽某高中一班超级厉害的人</p>
+        <p>精通各门学科</p>
+        <p>为人核善</p>
+        <p>总之牛逼</p>
+        <button onclick="onclic()">播放音乐</button>
+    </div>
+    <audio name="a" src="https://m701.music.126.net/20220318190700/66d5c0f32b259756e3ee83fa2cd2d2ef/jdyyaac/0653/075c/550e/1944a370da06640750dcbd3a804669cb.m4a" autoplay></audio>
+    <script>
+        function onclic(){
+            document.getElementsByName("a")[0].play();
+            return;
+        }
+        
+    </script>
+</body>
+
 </html>
